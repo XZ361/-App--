@@ -4,7 +4,7 @@
 开发技术:微信小程序官方文档+js+html5+css3<br/>
 ----
 小程序本次开发大致情况如何下图：<br/>
-![image](https://github.com/wangxiaozhan/-App--/blob/master/images/01.png)   ![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)    ![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)
+![image](https://github.com/wangxiaozhan/-App--/blob/master/images/01.png)   ![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)    ![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)<br/>
 `开发电影App过程中遇到的问题？`<br/>
 &lt;1&gt; 在开发电影推荐页和搜索页时发现结构，样式和主页面的结构，样式有很多相同的地方？<br/>
 &lt;2&gt; 在开发电影的业务逻辑时代码有很多相同的地方，重复造了很多轮子？，如果不改，就显得代码太冗余了<br/>
