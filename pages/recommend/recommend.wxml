@@ -1,0 +1,12 @@
+<!-- 电影推荐页面 -->
+<view class='content'>
+  <!-- 电影信息区域 -->
+  <!-- 引入公共电影区域模板 -->
+  <import src="../template/movietpl"/>
+  <template is="movies" data="{{movies}}"></template>
+</view>
+<view class='body-view'>
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>

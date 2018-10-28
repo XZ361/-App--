@@ -1,0 +1,31 @@
+/* pages/detail/detail.wxss */
+@import"../movie/movie.wxss";
+.content{
+  background-color: #3a3a3a;
+  min-height: 100%;
+}
+.casts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.casts image{
+  width: 180rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+.detail{
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  color: white;
+  font-size:14px;
+  line-height: 20px;
+}
+.hr{
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
+  opacity: .2;
+}

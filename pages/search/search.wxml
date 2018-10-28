@@ -1,0 +1,20 @@
+<view class="content">
+  <view class='search'>
+    <input class='input' bindinput='bindKeyInput'></input>
+    <button bindtap='search' hover-class='btnClick'>查询</button>
+  </view>
+  <text class='inputShow'>你要搜索：{{inputVal}}</text>
+  <view class='hr'></view>
+  <!-- 电影信息区域 -->
+  <!-- 引入公共电影区域模板 -->
+  <import src="../template/movietpl"/>
+  <template is="movies" data="{{movies}}"></template>
+</view>
+<view class='body-view'>
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>
+<modal title="小提示" confirm-text="知道啦" hidden="{{modalHidden}}" no-cancel="true" bindconfirm="hideModal">
+  <text>请输入需要查询的关键词，\n如：阿甘正传</text>
+</modal>

@@ -1,0 +1,19 @@
+<view class='content'>
+  <!-- 图片轮播 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{imgUrls.index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width:100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 电影信息区域 -->
+    <import src="../template/movietpl"/>
+  <template is="movies" data="{{movies}}"></template>
+
+</view>
+<view class='body-view'>
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>

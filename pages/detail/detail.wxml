@@ -1,0 +1,24 @@
+<view class='content'>
+    <!-- 电影海报图片 -->
+    <view class=''>
+      <image src='{{movie.images.large}}' mode='aspectFit'></image>
+    </view>
+    <view class='hr'></view>
+    <!-- 电影人员信息 -->
+    <view class='detail'>
+      <text>{{movie.text}}</text>
+    </view>
+    <!-- 电影演员图片 -->
+    <view class='casts'>
+      <block wx:for="{{movie.casts}}" wx:key="{{movie.casts.index}}">
+        <image src='{{item.avatars.medium}}' mode='aspectFit'></image>
+      </block>
+    </view>
+    <view class='hr'></view>
+    <view class='detail'>
+      <text>
+        {{movie.summary}}
+      </text>
+    </view>
+
+</view>
