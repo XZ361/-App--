@@ -1,9 +1,11 @@
 # -App--<br/>
 用微信小程序开发电影App<br/>
+====
 开发技术:微信小程序官方文档+js+html5+css3<br/>
+----
 小程序本次开发大致情况如何下图：<br/>
-![image](https://github.com/wangxiaozhan/-App--/blob/master/images/01.png)![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)
-开发电影App过程中遇到的问题？<br/>
+![image](https://github.com/wangxiaozhan/-App--/blob/master/images/01.png)\t\t\t\t![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)\t\t\t\t![image](https://github.com/wangxiaozhan/-App--/blob/master/images/03.png)
+`开发电影App过程中遇到的问题？`<br/>
 &lt;1&gt; 在开发电影推荐页和搜索页时发现结构，样式和主页面的结构，样式有很多相同的地方？<br/>
 &lt;2&gt; 在开发电影的业务逻辑时代码有很多相同的地方，重复造了很多轮子？，如果不改，就显得代码太冗余了<br/>
 &lt;3&gt; 在开发电影详细页时有了一个收获的地方？尝试了两种获取电影id的方法<br/>
@@ -17,7 +19,7 @@
   如下：<br/>
   @import"../movie/movie.wxss";<br/>
  <br/>
-2:当遇到逻辑业务代码重复时，为了避免造过多的轮子，可以将重复的函数抽离出来作为模块放入方法文件，当用到时就将相应的模块文件引入<br/>
+2: `当遇到逻辑业务代码重复时，为了避免造过多的轮子，可以将重复的函数抽离出来作为模块放入方法文件，当用到时就将相应的模块文件引入`<br/>
 例如：var common=require("../../utils/subjectUtil.js");<br/> 
 3：第一个方法，先将id存起来<br/>
 // 点击页面时，将电影的id存储起来,这是第一种传递电影id的方法<br/>
